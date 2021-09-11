@@ -13,7 +13,7 @@ import javax.persistence.Id;
 @Getter
 @NoArgsConstructor
 @Entity
-public class Posts {
+public class Posts extends BaseTimeEntity{
 
     @Id /* 해당 테이블 Pk */
     @GeneratedValue(strategy = GenerationType.IDENTITY) /* PK 생성규칙 */
